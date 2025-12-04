@@ -9,8 +9,6 @@
     "ignoreUnknown": true,
     "includes": [
       "**",
-      "**/*.html",
-      "**/*.css",
       "!**/node_modules",
       "!**/.next",
       "!**/dist",
@@ -38,19 +36,6 @@
     "formatter": {
       "quoteStyle": "single",
       "jsxQuoteStyle": "double"
-    }
-  },
-  "html": {
-    "formatter": {
-      "enabled": true
-    }
-  },
-  "css": {
-    "formatter": {
-      "enabled": true
-    },
-    "parser": {
-      "cssModules": false
     }
   },
   "linter": {
