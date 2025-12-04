@@ -9,6 +9,8 @@
     "ignoreUnknown": true,
     "includes": [
       "**",
+      "**/*.html",
+      "**/*.css",
       "!**/node_modules",
       "!**/.next",
       "!**/dist",
@@ -38,6 +40,19 @@
       "jsxQuoteStyle": "double"
     }
   },
+  "html": {
+    "formatter": {
+      "enabled": true
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true
+    },
+    "parser": {
+      "cssModules": false
+    }
+  },
   "linter": {
     "rules": {
       "recommended": true,
@@ -51,7 +66,7 @@
         "useSortedClasses": {
           "level": "warn",
           "options": {
-            "attributes": ["classList"],
+            "attributes": ["class", "classList"],
             "functions": ["cn", "clsx", "cva"]
           }
         }
