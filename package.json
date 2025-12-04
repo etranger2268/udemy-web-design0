@@ -3,9 +3,11 @@
   "private": true,
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify"
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify",
+    "format": "biome format --write ."
   },
   "devDependencies": {
+    "@biomejs/biome": "2.3.8",
     "@tailwindcss/cli": "^4.1.17",
     "tailwindcss": "^4.1.17"
   }
